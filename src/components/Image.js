@@ -1,12 +1,11 @@
 import React, {useState, useContext} from "react"
 import {Context} from "../Context"
-import PropTypes from "prop-types"
+import PropTypes, { func } from "prop-types"
 
 
 function Image({className, img}) {
     const [isHovered, setIsHovered] = useState(false)
-    const {toggleFavorite} = useContext(Context)
-    console.log(className, img)
+    const {toggleFavorite, addToCart, cartContents, removeFromCart} = useContext(Context)
     
     function heart() {
         if (img.isFavorite) {
@@ -16,7 +15,15 @@ function Image({className, img}) {
         }
     }
     
-    const cart = isHovered && <i className="ri-add-circle-line cart"></i>
+    function cart() {
+        const alreadyInCart = cartContents.some(item => item.id === img.id)
+        if(alreadyInCart) {
+            return <i className="ri-shopping-cart-fill cart" onClick={() => removeFromCart(img.id)}></i>
+        } else if(isHovered) {
+            return <i className="ri-add-circle-line cart" onClick={() => addToCart(img)}></i>
+        }
+
+    }
 
     return (
         <div 
@@ -27,7 +34,7 @@ function Image({className, img}) {
             <img src={img.url} className="image-grid"/>
 
             {heart()}
-            {cart}
+            {cart()}
 
         </div>
     )
