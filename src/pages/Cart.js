@@ -24,7 +24,7 @@ function Cart() {
             {cartItemElements}
             <p className="total-cost">Total: {(cartContents.length * 5.99).toLocaleString("en-US", {style: "currency", currency: "USD"})}</p>
             <div className="order-button">
-                <button onClick={() => placeOrder()}>{buttonText}</button>
+                {cartContents.length ? <button onClick={placeOrder}>{buttonText}</button> : []}
             </div>
         </main>
     )
