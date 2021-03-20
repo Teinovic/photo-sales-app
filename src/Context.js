@@ -6,7 +6,7 @@ function ContextProvider({children}) {
     const [photoArray, updatePhotoArray] = useState([])
     const [cartContents, setCartContents] = useState([])
 
-    const photosUrl = 'https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json'
+    const photosUrl = 'https://raw.githubusercontent.com/Teinovic/photo-sales-app/master/apifile'
     
     useEffect(() => {
         async function addPhoto() {
