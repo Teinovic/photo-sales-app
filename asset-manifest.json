@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/photo-sales-app/static/css/main.9d1e5270.chunk.css",
+    "main.js": "/photo-sales-app/static/js/main.c81070f1.chunk.js",
+    "main.js.map": "/photo-sales-app/static/js/main.c81070f1.chunk.js.map",
+    "runtime-main.js": "/photo-sales-app/static/js/runtime-main.e538f018.js",
+    "runtime-main.js.map": "/photo-sales-app/static/js/runtime-main.e538f018.js.map",
+    "static/js/2.4139227e.chunk.js": "/photo-sales-app/static/js/2.4139227e.chunk.js",
+    "static/js/2.4139227e.chunk.js.map": "/photo-sales-app/static/js/2.4139227e.chunk.js.map",
+    "index.html": "/photo-sales-app/index.html",
+    "static/css/main.9d1e5270.chunk.css.map": "/photo-sales-app/static/css/main.9d1e5270.chunk.css.map",
+    "static/js/2.4139227e.chunk.js.LICENSE.txt": "/photo-sales-app/static/js/2.4139227e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e538f018.js",
+    "static/js/2.4139227e.chunk.js",
+    "static/css/main.9d1e5270.chunk.css",
+    "static/js/main.c81070f1.chunk.js"
+  ]
+}
