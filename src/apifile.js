@@ -1,6 +1,6 @@
-[
+export const photos1 = [
     {
-        "url": "https://i.ibb.co/QjZTVHh/20543734-1267285010048697-8083977081515551546-o-1267285010048697.jpg"
+        "url": "https://i.ibb.co/QjZTVHh/20543734-1267285010048697-8083977081515551546-o-1267285010048697.jpg",
         "id": "1",
         "isFavorite": false
     },

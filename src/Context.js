@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import {photos1} from './apifile'
 
 const Context = React.createContext()
 
@@ -6,13 +7,17 @@ function ContextProvider({children}) {
     const [photoArray, updatePhotoArray] = useState([])
     const [cartContents, setCartContents] = useState([])
 
-    const photosUrl = 'https://github.com/Teinovic/photo-sales-app/blob/master/apifile'
+    const photosUrl = photos1
     
     useEffect(() => {
         async function addPhoto() {
-            const photosPromise = await fetch(photosUrl)
-            const photos = await photosPromise.json()
-            updatePhotoArray(photos)
+            try {
+                const photos = photosUrl
+                updatePhotoArray(photos)
+              } catch(err) {
+                    console.log('Error happened here!')
+                    console.error(err); // TypeError: failed to fetch
+              }
         }
         addPhoto()
     }, [])
