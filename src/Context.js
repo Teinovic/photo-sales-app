@@ -6,7 +6,7 @@ function ContextProvider({children}) {
     const [photoArray, updatePhotoArray] = useState([])
     const [cartContents, setCartContents] = useState([])
 
-    const photosUrl = 'https://raw.githubusercontent.com/Teinovic/photo-sales-app/master/apifile'
+    const photosUrl = 'https://github.com/Teinovic/photo-sales-app/blob/master/apifile'
     
     useEffect(() => {
         async function addPhoto() {
