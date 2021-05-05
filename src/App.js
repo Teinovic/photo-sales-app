@@ -13,6 +13,9 @@ function App() {
                 <Route exact path="/">
                     <Photos />
                 </Route>
+                <Route exact path="/photo-sales-app">
+                    <Photos />
+                </Route>
                 
                 <Route path="/cart">
                     <Cart />
